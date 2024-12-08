@@ -21,9 +21,7 @@ section {
     max-width: 900px;
     margin: 0 auto;
     padding: 3rem 2rem;
-    /*background-color: white;*/
     border-radius: 12px;
-    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
     line-height: 1.8;
     color: var(--text-color);
 }
@@ -178,7 +176,7 @@ nav a.active {
 .main-container {
     max-width: 900px;
     margin: 6rem auto; /* Add consistent spacing above */
-    padding: 3rem 2rem;
+    padding: 1rem 2rem;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

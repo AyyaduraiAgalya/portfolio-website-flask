@@ -1,31 +1,36 @@
-from flask import Blueprint, render_template, request, flash
+from flask import Blueprint, render_template, send_from_directory
 
-main = Blueprint('main', __name__)
+# Define the blueprint
+main_routes = Blueprint('main_routes', __name__)
 
-@main.route('/')
+@main_routes.route('/')
 def home():
     return render_template('home.html')
 
-@main.route('/about')
+@main_routes.route('/about')
 def about():
     return render_template('about.html')
 
-@main.route('/skills')
+@main_routes.route('/skills')
 def skills():
     return render_template('skills.html')
 
-@main.route('/experience')
+@main_routes.route('/experience')
 def experience():
     return render_template('experience.html')
 
-@main.route('/education')
+@main_routes.route('/education')
 def education():
     return render_template('education.html')
 
-@main.route('/projects')
+@main_routes.route('/projects')
 def projects():
     return render_template('projects.html')
 
-@main.route('/contact')
+@main_routes.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@main_routes.route('/favicon.ico')
+def favicon():
+    return send_from_directory('static', 'favicon.ico', mimetype='image/vnd.microsoft.icon')
