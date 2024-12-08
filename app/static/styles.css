@@ -1,0 +1,384 @@
+:root {
+    --primary-color: #344e41ff; /* Dark Slate Blue */
+    --secondary-color: #588157ff; /* Soft Coral Red */
+    --background-color: #dad7cdff; /* Light Grayish White */
+    --text-color: #3a5a40ff; /* Muted Blue-Gray */
+    --button-hover-color: #a3b18aff; /* Vibrant Red */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+/* General Section Styling */
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    /*background-color: white;*/
+    border-radius: 12px;
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+/* Global Headings */
+h1, h2 {
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color); /* Bottom border */
+    display: inline-block; /* Shrinks to fit text and border */
+    padding-bottom: 0.5rem;
+    text-align: center; /* Centers text within the element */
+    margin-left: auto; /* Centers the element horizontally */
+    margin-right: auto; /* Centers the element horizontally */
+}
+
+/* Global Paragraphs */
+p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+/* Global Buttons */
+.btn {
+    display: inline-block;
+    width: 250px;
+    padding: 0.8rem 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+}
+
+/* List Styling */
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 2rem; /* Indent list items */
+    margin-bottom: 1.5rem; /* Space below lists */
+    text-align: left;
+}
+
+/* Global Checkmark for List Items */
+ul > li {
+    position: relative; /* Enable custom marker positioning */
+    padding-left: 2rem; /* Indent text for marker */
+}
+
+ul > li::before {
+    content: "✔️"; /* Checkmark for top-level lists */
+    position: absolute; /* Position marker */
+    left: 0; /* Align marker with left edge */
+    color: var(--secondary-color); /* Branding color for checkmark */
+    font-size: 1.2rem; /* Adjust size for readability */
+}
+
+/* Sublists (Lists Within Lists) */
+ul ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 2rem; /* Additional indentation for nested list */
+}
+
+ul ul li {
+    position: relative; /* Enable custom marker positioning */
+    padding-left: 2rem; /* Indent text for marker */
+}
+
+ul ul li::before {
+    content: "★"; /* Star for sublists */
+    position: absolute; /* Position marker */
+    left: 0; /* Align marker with left edge */
+    color: var(--primary-color); /* Different color for sublist stars */
+    font-size: 1rem; /* Slightly smaller size for sublist markers */
+}
+
+nav {
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Stick to the top of the viewport */
+    left: 0; /* Align to the left edge */
+    width: 100%; /* Ensure it spans the full width */
+    background-color: var(--primary-color); /* Maintain background color */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+/* Navigation Brand (Optional) */
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none; /* Remove underline */
+    margin-right: auto; /* Push brand to the left */
+}
+
+/* Navigation Links */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem; /* Spacing between links */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Links */
+nav a:hover {
+    color: var(--button-hover-color); /* Change color on hover */
+    transform: scale(1.05); /* Slight enlarge on hover */
+}
+
+/* Highlight Active Link */
+nav a.active {
+    font-weight: bold; /* Emphasize the active link */
+    border-bottom: 2px solid white; /* Add underline for active link */
+    padding-bottom: 0.2rem; /* Adjust spacing for underline */
+}
+
+/* Mobile Navigation */
+.nav-toggle {
+    display: none; /* Hide by default */
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+.main-container {
+    max-width: 900px;
+    margin: 6rem auto; /* Add consistent spacing above */
+    padding: 3rem 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    line-height: 1.8;
+    text-align: left;
+}
+/* Home Section */
+.home {
+    text-align: center;
+}
+
+.resume-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* About Section */
+.about {
+    text-align: left;
+}
+
+/* Skills Section */
+.skills {
+    text-align: left;
+}
+
+.skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.skills-category {
+    margin-bottom: 2rem;
+}
+
+/* Experience Section */
+.experience {
+    text-align: left;
+}
+
+.experience-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Education Section */
+.education {
+    text-align: left;
+}
+
+/*.education-category h2 {*/
+/*    font-size: 1.5rem;*/
+/*    margin-bottom: 0.5rem;*/
+/*    display: inline-block;*/
+/*    border-bottom: 2px solid var(--secondary-color);*/
+/*    padding-bottom: 0.5rem;*/
+/*}*/
+
+.education-category p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+/* Projects Section */
+.projects {
+    text-align: left;
+}
+
+/*.project-category h2 {*/
+/*    font-size: 1.5rem;*/
+/*    margin-bottom: 1rem;*/
+/*}*/
+
+.project-category p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.project-links a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-links a:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 1rem;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 0.7rem 1rem;
+    }
+
+    .resume-links {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .skills h3,
+    .experience-category h3 {
+        font-size: 1.3rem;
+    }
+
+    ul ul li::before {
+        font-size: 0.9rem; /* Slightly smaller for nested lists on small screens */
+    }
+
+    nav {
+        flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+        justify-content: center; /* Center links on mobile */
+    }
+
+    nav a {
+        margin: 0.5rem; /* Adjust spacing for smaller screens */
+        font-size: 1rem; /* Reduce font size */
+    }
+
+    /* Show Toggle Button */
+    .nav-toggle {
+        display: block; /* Show toggle for mobile */
+        margin-left: auto; /* Push to the right */
+    }
+
+    /* Hidden Links (for mobile dropdown) */
+    .nav-links {
+        display: none; /* Hide links initially */
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Take full width */
+        text-align: center; /* Center-align links */
+        background-color: var(--primary-color); /* Match nav background */
+    }
+
+    /* Show Links When Toggle Is Active */
+    .nav-links.active {
+        display: flex; /* Show links in a vertical column */
+    }
+
+    .main-container {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
+        max-width: 100%; /* Allow the container to use full width */
+        box-shadow: none; /* Simplify appearance for smaller devices */
+    }
+    .contact {
+        padding: 2rem 1rem;
+    }
+
+    .contact h1 {
+        font-size: 2rem;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .contact-item h2 {
+        font-size: 1.2rem;
+    }
+
+    .contact-item a {
+        font-size: 0.95rem;
+    }
+}
