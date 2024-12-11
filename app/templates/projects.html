@@ -4,59 +4,277 @@
 <section class="projects">
     <h1>Projects</h1>
 
-    <!-- Project 1: Software Test Essentials -->
-    <div class="project-category">
-        <h2>Software Test Essentials Repository</h2>
+    <p>
+        Explore my portfolio of projects showcasing innovation, problem-solving, and real-world impact across various domains.
+    </p>
+
+    <!-- Playwright-RestSharp-Azure Project -->
+    <div class="project">
+        <h2>1. Playwright-RestSharp-Azure</h2>
+        <p><strong>Timeline:</strong> In-Progress (MVP Completed)</p>
+
         <p>
-            A comprehensive repository demonstrating proficiency in testing tools, frameworks, and methodologies.
-            Includes manual and automated testing, performance testing, and DevOps integration.
+            <strong>Brief Description:</strong>
+            This project demonstrates a robust end-to-end testing framework for the OWASP Juice Shop application.
+            It integrates UI and API testing using industry-standard tools, combined with CI/CD pipeline automation
+            through Azure DevOps. The project showcases scalable, efficient testing practices for frontend and backend systems.
         </p>
+
+        <h3>Key Responsibilities & Contributions</h3>
         <ul>
-            <li>Implemented core automation frameworks using Selenium, TestNG, and Postman.</li>
-            <li>Showcased performance testing with JMeter, k6, and integrated Grafana dashboards.</li>
-            <li>Demonstrated security testing with OWASP ZAP and accessibility testing with AXE and WAVE.</li>
+            <li>
+                <strong>Frontend/UI Testing:</strong>
+                Developed cross-browser automated test scripts using Playwright, integrating features like retries, screenshots, and HTML reports for improved testing efficiency.
+            </li>
+            <li>
+                <strong>Backend/API Testing:</strong>
+                Designed comprehensive API test suites using RestSharp, incorporating modular base classes and JSON parsing for functional validation.
+            </li>
+            <li>
+                <strong>CI/CD Integration:</strong>
+                Set up an Azure DevOps pipeline to automate UI and API test execution, ensuring seamless integration with modern development workflows.
+            </li>
+            <li>
+                <strong>Secure Configurations:</strong>
+                Ensured secure handling of sensitive data using .env files, appsettings.json, and Azure Pipeline variables.
+            </li>
+            <li>
+                <strong>Scalability:</strong>
+                Modularized test scripts and configurations for easy maintenance and scalability across different test scenarios.
+            </li>
         </ul>
+
+        <h3>Tools & Technologies</h3>
+        <ul>
+            <li><strong>Playwright:</strong> UI testing framework for cross-browser automation.</li>
+            <li><strong>RestSharp:</strong> HTTP client library for API testing in C#.</li>
+            <li><strong>NUnit:</strong> .NET testing framework for API validation.</li>
+            <li><strong>Azure DevOps Pipelines:</strong> CI/CD pipeline for automated test execution.</li>
+            <li><strong>Node.js:</strong> Runtime for Playwright tests.</li>
+            <li><strong>.NET:</strong> Platform for backend API testing with C#.</li>
+            <li><strong>Azure App Services:</strong> Hosting the Juice Shop application for testing.</li>
+        </ul>
+
+        <h3>Impact & Outcome</h3>
+        <ul>
+            <li>Streamlined end-to-end testing for Juice Shop, enabling robust validation of both frontend and backend functionalities.</li>
+            <li>Reduced manual testing effort by 70% through automation, improving test accuracy and coverage.</li>
+            <li>Integrated secure handling of sensitive configurations, ensuring best practices for data management in CI/CD workflows.</li>
+        </ul>
+
+        <h3>Future Work</h3>
+        <ul>
+            <li>Integrate cross-browser testing using BrowserStack or LambdaTest for enhanced test coverage.</li>
+            <li>Add performance testing capabilities using JMeter or k6.</li>
+            <li>Include BDD and generate test report using Allure Reports</li>
+        </ul>
+
         <div class="project-links">
-            <a href="https://github.com/AyyaduraiAgalya/software-test-essentials" target="_blank">View on GitHub</a>
+            <a href="https://github.com/AyyaduraiAgalya/Playwright-RestSharp-Azure" target="_blank">View on GitHub</a>
         </div>
     </div>
 
-
-    <!-- Project 3: Financial Analytics System -->
-    <div class="project-category">
+    <!-- Financial Analytics System -->
+    <div class="project">
         <h2>Financial Analytics System</h2>
+        <p><strong>Timeline:</strong> MVP Completed, In-Progress</p>
+
         <p>
-            A system to analyze forex markets, predict trends, and provide actionable insights using
-            quantitative finance, machine learning, and time-series analysis.
+            <strong>Brief Description:</strong>
+            This project provides in-depth insights into forex markets, particularly focusing on the EURUSD currency pair. Combining quantitative financial analysis, machine learning, and data science techniques, it predicts market trends and explores correlations with macroeconomic indicators.
         </p>
+
+        <h3>Key Responsibilities & Contributions</h3>
         <ul>
-            <li>Forecasted forex rates using LSTM models for EURUSD currency pair.</li>
-            <li>Integrated various AWS services as RDS, EC2, S3, Lambda with the analytics system</li>
-            <li>Migrated workflows from AWS to cost-effective cloud resources for scalability.</li>
+            <li>
+                <strong>AWS Integration:</strong>
+                Leveraged AWS RDS for secure PostgreSQL database management, OpenVPN on EC2 for remote access, and Lambda for automated data fetching during the initial phase.
+            </li>
+            <li>
+                <strong>Cloud Migration:</strong>
+                Transitioned the project to Neon, a free PostgreSQL alternative, ensuring cost-effectiveness while retaining full functionality.
+            </li>
+            <li>
+                <strong>Data Pipeline Development:</strong>
+                Built a pipeline to fetch EURUSD data from the OANDA API, calculate short-term (5-day) and long-term (50-day) moving averages, and store results in the database.
+            </li>
+            <li>
+                <strong>Time Series Forecasting:</strong>
+                Trained an LSTM model to predict EURUSD closing prices, achieving RMSE of 0.0111 and MAE of 0.0091.
+            </li>
+            <li>
+                <strong>Project Management:</strong>
+                Managed workflows using Jira and GitHub integration, following Agile practices for seamless task tracking and collaboration.
+            </li>
+        </ul>
+
+        <h3>Tools & Technologies</h3>
+        <ul>
+            <li><strong>AWS:</strong> RDS (PostgreSQL), Lambda, EC2</li>
+            <li><strong>Database:</strong> Neon (PostgreSQL), psycopg2</li>
+            <li><strong>Data Science:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn</li>
+            <li><strong>Machine Learning:</strong> LSTM (TensorFlow/Keras)</li>
+            <li><strong>API:</strong> OANDA API</li>
+            <li><strong>Project Management:</strong> Jira, GitHub</li>
+        </ul>
+
+        <h3>Impact & Outcome</h3>
+        <ul>
+            <li>Developed a scalable pipeline for data fetching, analysis, and storage, reducing manual efforts by 80%.</li>
+            <li>Achieved promising model accuracy for forex rate predictions, supporting better decision-making in financial markets.</li>
+            <li>Enhanced cost efficiency by transitioning from AWS to Neon, saving over 90% of project-related costs.</li>
+        </ul>
+
+        <h3>Future Work</h3>
+        <ul>
+            <li>Implement advanced hyperparameter tuning for LSTM models.</li>
+            <li>Extend distributed machine learning capabilities using PySpark MLlib.</li>
+            <li>Develop a Tableau dashboard for advanced visual analytics and insights.</li>
+            <li>Introduce A/B testing to evaluate real-world model performance.</li>
         </ul>
         <div class="project-links">
             <a href="https://github.com/AyyaduraiAgalya/financial-analytics-system" target="_blank">View on GitHub</a>
         </div>
     </div>
-
     <!-- Project 4: Fraud Detection System -->
-    <div class="project-category">
+    <!-- Credit Card Fraud Detection -->
+    <div class="project">
         <h2>Fraud Detection System</h2>
+        <p><strong>Timeline:</strong> Completed</p>
+
         <p>
-            A scalable machine learning solution for detecting credit card fraud, leveraging PySpark
-            for distributed data processing and advanced feature engineering.
+            <strong>Brief Description:</strong>
+            This project leverages distributed data processing and machine learning to detect fraudulent transactions in credit card data. It combines end-to-end data science workflows with scalable tools like PySpark to simulate real-world data handling and predictive modeling.
         </p>
+
+        <h3>Key Responsibilities & Contributions</h3>
         <ul>
-            <li>Built and evaluated logistic regression models with advanced fraud detection metrics.</li>
-            <li>Engineered features like transaction frequency, amount variability, and time-based patterns.</li>
-            <li>Achieved an AUC score of 0.97 and precision of 89% for fraud detection.</li>
+            <li>
+                <strong>Data Pipeline Development:</strong>
+                Built a scalable data pipeline using PySpark for loading, cleaning, and processing credit card transaction data.
+            </li>
+            <li>
+                <strong>Exploratory Data Analysis:</strong>
+                Conducted EDA to understand class imbalances, distribution patterns, and potential fraud indicators.
+            </li>
+            <li>
+                <strong>Feature Engineering:</strong>
+                Engineered fraud-related features, including transaction frequency, average transaction amounts, and rolling standard deviations within 5-min and 1-hour windows.
+            </li>
+            <li>
+                <strong>Preprocessing:</strong>
+                Standardized numerical features and split data into train/test sets, ensuring consistency in model inputs.
+            </li>
+            <li>
+                <strong>Model Development:</strong>
+                Trained and evaluated a logistic regression model using PySpark MLlib, achieving high AUC and F1 scores.
+            </li>
+            <li>
+                <strong>Evaluation Metrics:</strong>
+                Assessed model performance using advanced metrics like Precision, Recall, F1 Score, ROC-AUC, and False Positive Rate.
+            </li>
+        </ul>
+
+        <h3>Tools & Technologies</h3>
+        <ul>
+            <li><strong>Distributed Processing:</strong> PySpark</li>
+            <li><strong>Data Manipulation:</strong> Pandas, NumPy</li>
+            <li><strong>Data Visualization:</strong> Matplotlib</li>
+            <li><strong>Machine Learning:</strong> Logistic Regression with PySpark MLlib</li>
+        </ul>
+
+        <h3>Impact & Outcome</h3>
+        <ul>
+            <li>Achieved a high AUC score of 0.9709, demonstrating strong model performance in distinguishing fraudulent and legitimate transactions.</li>
+            <li>Delivered a scalable fraud detection solution, simulating real-world data processing and machine learning workflows.</li>
+            <li>Enhanced the project's analytical depth with engineered features that significantly improved detection sensitivity.</li>
+        </ul>
+
+        <h3>Future Work</h3>
+        <ul>
+            <li>Implement hyperparameter optimization for Logistic Regression to enhance model performance further.</li>
+            <li>Explore tree-based models like Random Forests and Decision Trees for better fraud detection sensitivity.</li>
+            <li>Integrate PySpark MLlib for distributed machine learning and extend the scalability of the solution.</li>
+            <li>Develop a Tableau dashboard to visualize fraud detection insights interactively.</li>
+            <li>Introduce A/B testing to evaluate the model's real-world performance under various conditions.</li>
         </ul>
         <div class="project-links">
             <a href="https://github.com/AyyaduraiAgalya/fraud-detection-system" target="_blank">View on GitHub</a>
         </div>
     </div>
 
-        <!-- Project 2: Data Science Essentials -->
+    <!-- Portfolio Website Project -->
+    <div class="project">
+        <h2>Portfolio Website</h2>
+        <p><strong>Timeline:</strong> MVP Completed, In Progress </p>
+
+        <p>
+            <strong>Brief Description:</strong>
+            A dynamic and responsive portfolio website built using Flask to showcase my professional journey, skills, and projects. The website integrates interactive features and emphasizes clarity and accessibility for potential employers and collaborators.
+        </p>
+
+        <h3>Key Responsibilities & Contributions</h3>
+        <ul>
+            <li>
+                <strong>Design and Development:</strong>
+                Built the website from scratch with a focus on user-friendly navigation, responsive design, and consistent branding across all pages.
+            </li>
+            <li>
+                <strong>Dynamic Content:</strong>
+                Implemented dynamic sections for professional experience, skills, projects, and a contact form using Flask templates and Jinja2.
+            </li>
+            <li>
+                <strong>Custom Styling:</strong>
+                Used custom CSS and Bootstrap for responsive layouts, creating an aesthetically pleasing and mobile-friendly design.
+            </li>
+            <li>
+                <strong>Interactive Features:</strong>
+                Developed collapsible sections, anchor links for quick navigation, and AJAX-powered contact forms for seamless user interactions.
+            </li>
+            <li>
+                <strong>Backend Integration:</strong>
+                Designed a Flask-based backend to serve dynamic content, manage form submissions, and handle routing effectively.
+            </li>
+            <li>
+                <strong>Deployment:</strong>
+                Configured deployment pipelines for hosting on Render, integrating CI/CD workflows for seamless updates and maintenance.
+            </li>
+            <li>
+                <strong>Future Scalability:</strong>
+                Structured the application to allow easy addition of new sections, projects, and skills without major redesign efforts.
+            </li>
+        </ul>
+
+        <h3>Tools & Technologies</h3>
+        <ul>
+            <li><strong>Framework:</strong> Flask</li>
+            <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, Bootstrap</li>
+            <li><strong>Backend:</strong> Python</li>
+            <li><strong>Deployment:</strong> Render</li>
+            <li><strong>Database:</strong> SQLite (future scope for integration)</li>
+        </ul>
+
+        <h3>Impact & Outcome</h3>
+        <ul>
+            <li>Created a centralized hub to showcase professional achievements, increasing personal branding and visibility.</li>
+            <li>Demonstrated expertise in full-stack development by integrating frontend and backend technologies seamlessly.</li>
+            <li>Enhanced user engagement through a clean, intuitive, and interactive interface.</li>
+        </ul>
+
+        <h3>Future Work</h3>
+        <ul>
+            <li>Integrate a blog section to share insights and learning experiences.</li>
+            <li>Enhance accessibility by adhering to WCAG standards.</li>
+            <li>Implement analytics to track visitor engagement and optimize user experience.</li>
+            <li>Upgrade the contact form to include file upload capabilities.</li>
+            <li>Expand deployment to include additional platforms like AWS or Azure for scalability.</li>
+        </ul>
+                <div class="project-links">
+            <a href="https://github.com/AyyaduraiAgalya/Portfolio-Website-Flask" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Project 2: Data Science Essentials -->
     <div class="project-category">
         <h2>Data Science Essentials Repository</h2>
         <p>
