@@ -1,10 +1,19 @@
+/*:root {*/
+/*    --primary-color: #284B63;*/
+/*    --secondary-color: #3C6E71;*/
+/*    --background-color: #dee2e6;*/
+/*    --text-color: #353535;*/
+/*    --button-hover-color: #284B63;*/
+/*}*/
+
 :root {
-    --primary-color: #344e41ff; /* Dark Slate Blue */
-    --secondary-color: #588157ff; /* Soft Coral Red */
-    --background-color: #dad7cdff; /* Light Grayish White */
-    --text-color: #3a5a40ff; /* Muted Blue-Gray */
-    --button-hover-color: #a3b18aff; /* Vibrant Red */
+    --primary-color: #134074;
+    --secondary-color: #679436;
+    --background-color: #dee2e6;
+    --text-color: #0B2545;
+    --button-hover-color: #5c374c;
 }
+
 
 html, body {
     margin: 0;
@@ -27,8 +36,12 @@ section {
 }
 
 /* Global Headings */
-h1, h2 {
+h1{
     color: var(--primary-color);
+}
+
+h2{
+    color: var(--secondary-color)
 }
 
 h1 {
@@ -153,7 +166,7 @@ nav a {
 
 /* Hover Effect for Links */
 nav a:hover {
-    color: var(--button-hover-color); /* Change color on hover */
+    color: var(--secondary-color); /* Change color on hover */
     transform: scale(1.05); /* Slight enlarge on hover */
 }
 
