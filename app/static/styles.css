@@ -278,8 +278,6 @@ nav a.active {
     transform: scale(1.05);
 }
 
-/* Contact Section */
-
 /* Responsive Styling */
 @media (max-width: 768px) {
     section {
