@@ -4,164 +4,94 @@
 <section class="experience">
     <h1>Professional Experience</h1>
 
-    <!-- Current Role -->
-    <div class="experience-category">
-        <h2>Data Scientist & Software QA Manager</h2>
-        <p><strong>siHealth Ltd, Didcot, UK</strong> – <em>Jan 2024 to Present</em></p>
-        <!-- Data Scientist Responsibilities -->
-        <h3>Data Science Responsibilities</h3>
-        <ul>
-            <li>
-                Developed and enhanced an indoor-outdoor detection model using mobile sensor data, integrated into mobile apps to monitor users’ UV dose intake, alerting them about sunburn risks or achieving Vitamin D goals.
-            </li>
-            <li>
-                Improved the model's F1 score from 61 to 71 by addressing overfitting through advanced feature engineering, including capturing temporal context with rolling statistics, oversampling with SMOTE, and analyzing feature importance using SHAP.
-            </li>
-            <li>
-                Designed and implemented a highly interactive Dash app within a single day to visualize data analytics across devices and platforms, enabling stakeholders to explore feature contributions to indoor/outdoor detection through histograms, box plots, and violin plots.
-            </li>
-            <li>
-                Extended the Dash app to include real-time model-building capabilities, allowing users to input hyperparameters, select features, and oversample data, providing immediate feedback on model performance metrics such as F1 score, accuracy, precision, recall, and AUC.
-            </li>
-            <li>
-                Utilized MLFlow for model deployment and reproducibility, ensuring consistent and efficient workflows from development to production.
-            </li>
-            <li>
-                Built a collaborative environment by sharing insights from data visualizations and model interpretations, driving informed decision-making across cross-functional teams.
-            </li>
-        </ul>
-        <!-- QA Manager Responsibilities -->
-        <h3>Software QA Responsibilities</h3>
-        <ul>
-            <li>
-                Managed workloads across QA and data science responsibilities, ensuring high-quality deliverables and on-time completion of all tasks, even under tight deadlines.
-            </li>
-            <li>
-                Oversaw end-to-end manual and automation testing of mobile apps (iOS and Android) and web apps, ensuring robust functionality for UV dose monitoring based on dynamic factors such as sunscreen type, environment (e.g., beach, snow, park, city), clothing, and user-provided inputs.
-            </li>
-            <li>
-                Validated complex dose calculations, including erythemal dose for sunburn, Vitamin D dose, UVA dose for photodamage, and HEV blue dose, across more than 50 combinations of factors like clothing, environment, and sunscreen, ensuring accurate updates for each scenario.
-            </li>
-            <li>
-                Conducted extensive testing for different time zones, including simulating GPS locations in Europe, Australia,, America, Singapore, verifying app behavior during local sunset and sunrise, and ensuring seamless functionality of background microservices for automatic app restart after device reboots.
-            </li>
-            <li>
-                Verified daily resets of environment, clothing, and sunscreen values to ensure accurate dose calculations for the following day, even in scenarios involving background service interruptions.
-            </li>
-            <li>
-                Tested dose insights captured in a web portal, validating the accuracy of graphs and summaries under various scenarios to ensure consistent data representation across devices.
-            </li>
-            <li>
-                Led manual, functional, regression, and performance testing efforts while coordinating with cross-functional teams during sprint planning and retrospectives to address issues and improve workflows.
-            </li>
-            <li>
-                Implemented API testing using Postman, validating endpoints and integrating monitoring systems that reduced production downtime by automatically notifying the team of failures via email.
-            </li>
-            <li>
-                Collaborated closely with cross-platform developers to identify and resolve issues, ensuring compliance with requirements during the design and development stages.
-            </li>
-            <li>
-                Analyzed Android logs using Android Studio to identify root causes of app issues, significantly reducing debugging time for developers.
-            </li>
-            <li>
-                Monitored web application behavior using browser developer tools to inspect API calls, verify correct handling of responses, and identify system errors, earning the nickname "Defect Detective" for proactive issue identification.
-            </li>
-        </ul>
-    </div>
-
-    <!-- Previous Role -->
-    <div class="experience-category">
-        <h2>Production and QA Manager</h2>
-        <p><strong>siHealth Ltd, Didcot, UK</strong> – <em>Oct 2021 to Dec 2023</em></p>
-        <ul>
-            <li><strong>Domain Expertise:</strong> Specialized in testing complex web and mobile applications in the healthcare and IoT domains, including CE-marked and medically classified apps.</li>
-
-            <!-- Healthcare and IoT Domain -->
-            <li>Managed testing for treatment systems for AK and vitiligo patients via a web portal used by doctors to add patients, monitor real-time progress, score images, and generate insights through interactive graphs.</li>
-            <li>Tested companion mobile apps (iOS and Android) for patients to follow pre-treatment, sun exposure, and post-treatment steps, upload images and feedback, and reschedule treatments.</li>
-            <li>Validated mobile apps tracking indoor/outdoor activity to calculate UVA, UVB, and HEV doses, helping users avoid sunburn or achieve Vitamin D intake based on environment and clothing.</li>
-            <li>Collaborated with top sunscreen brands to simulate dose intake for user behavior, forecasted weather, and environmental factors, recommending products and alerting users for sunburn risks or Vitamin D achievement.</li>
-            <li>Ensured seamless integration between web portals and mobile apps, allowing researchers and sunscreen companies to analyze user data and improve products.</li>
-            <li>Verified real-time monitoring systems, ensuring accurate tracking of PPIX dose intake and treatment progress for AK and vitiligo patients.</li>
-
-            <!-- Regulatory Compliance and Audits -->
-            <li>Tested and validated CE-marked, medically classified applications, ensuring compliance with regulatory standards and high-quality delivery.</li>
-            <li>Contributed to and successfully passed two ISO audits (ISO 9001) with zero major non-conformances, showcasing strict adherence to quality and regulatory processes.</li>
-            <li>Ensured compliance with healthcare industry standards, including data privacy and security protocols, during testing of treatment monitoring systems.</li>
-
-            <!-- Tools and Technical Expertise -->
-            <li>Spearheaded the transition from waterfall to Agile Scrum, optimizing workflows using JIRA, BitBucket, and Confluence, reducing project delivery timelines by 25%.</li>
-            <li>Created detailed test plans, cases, and defect reports, leveraging TDD principles to ensure efficient testing and alignment with development cycles.</li>
-            <li>Validated dose calculation systems for 10+ sunscreen brands, ensuring precise results and improving dose accuracy by 20% under varied environmental conditions.</li>
-            <li>Simulated environmental scenarios to test sun exposure monitoring systems, validating 50+ combinations of weather, clothing, and location factors.</li>
-            <li>Automated regression testing using Selenium, reducing test execution time by 40% and improving overall testing efficiency.</li>
-            <li>Conducted load and stress testing using JMeter, optimizing performance for high-load systems and reducing response times by 25%.</li>
-            <li>Designed and executed API tests using Postman, validating over 100 endpoints for secure and seamless data integration.</li>
-            <li>Used simple and moderately complex SQL queries in MySQL to validate data mapping and ensure data integrity between web and mobile applications.</li>
-            <li>Integrated test automation frameworks into CI/CD pipelines using BitBucket Pipeline and AWS CodePipeline, enabling continuous testing for frequent deployments.</li>
-            <li>Validated notification systems, ensuring timely delivery for sunburn risks, Vitamin D achievements, and daily progress updates.</li>
-
-            <!-- Leadership and Collaboration -->
-            <li>Mentored a junior QA engineer, improving team productivity by 30% through structured training and knowledge-sharing sessions.</li>
-            <li>Collaborated with cross-functional teams, including R&D and developers, to refine workflows and resolve critical defects, reducing production bug leakage by 25%.</li>
-            <li>Resolved critical time zone synchronization issues in real-time monitoring systems, ensuring accuracy across 10+ global locations (EMEA).</li>
-            <li>Ensured compliance with healthcare industry standards during testing of treatment monitoring systems, maintaining data privacy and security.</li>
-
-        </ul>
-    </div>
-
-    <!-- QA Engineer Role -->
+    <!-- Software QA Engineer Role -->
     <div class="experience-category">
         <h2>Software QA Engineer</h2>
-        <p><strong>siHealth Ltd, Didcot, UK</strong> – <em>Aug 2020 to Oct 2021</em></p>
+        <p><strong>siHealth Ltd, Didcot, UK</strong> – <em>Aug 2020 to Present</em></p>
+        <p><strong>Tech Stack:</strong> Python, Pytest, Selenium, Appium, Postman/Newman, JavaScript, SQL, MySQL, MySQL Workbench, AWS CodePipeline, Jira, Confluence, Bitbucket, LucidCharts, Figma, Miro</p>
+
+        <!-- Responsibilities grouped by focus area -->
+        <h3>Testing Responsibilities</h3>
         <ul>
             <li>
-                Introduced and implemented the Software Testing Life Cycle (STLC) process for the first time within the company, establishing robust QA practices where none previously existed.
+                <strong>Introduced and implemented the Software Testing Life Cycle (STLC):</strong> Established robust QA practices and standardized workflows within the company for the first time.
             </li>
             <li>
-                Designed and executed test plans, test cases, defect reports, test summary reports, Requirements Traceability Matrices (RTM), and requirement analysis documents, ensuring thorough documentation of the QA process.
+                <strong>Test Documentation:</strong> Created test plans, test cases, Requirements Traceability Matrices (RTMs), test summary and defect reports, ensuring comprehensive documentation and alignment with QA best practices.
             </li>
             <li>
-                Conducted API testing using Postman, validating endpoints, ensuring error handling, and testing system integrations to maintain application reliability.
+                <strong>Conducted comprehensive manual and automation testing:</strong> Tested medical devices and CE marked mobile (iOS/Android) and web applications, covering functional, ETL, regression, performance, and exploratory testing to ensure product quality.
             </li>
             <li>
-                Set up and monitored system health checks through Postman, configuring automated alerts to notify the team immediately via email in case of system failures, significantly reducing production downtime and improving user experience.
+                <strong>Validated complex dose calculations:</strong> Ensured accurate dose updates for erythemal, Vitamin D, UVA, and HEV doses across 75+ combinations of factors like skin type, sunscreen, clothing and environment.
             </li>
             <li>
-                Collaborated closely with designers and developers to address requirements that were not satisfied, correcting feature implementation issues, and identifying gaps during the design and development stages.
+                <strong>Automated and executed API tests:</strong> Developed automated tests for over 200 endpoints, proactively identifying backend issues and minimising backend downtime when new APIs are implemented.
             </li>
             <li>
-                Established API testing workflows using Postman, which enhanced backend reliability and reduced frustrations for front-end developers by proactively identifying and resolving backend issues.
+                <strong>Automated and executed API tests:</strong> Developed automated UI tests for both web and mobile apps, reducing regression testing time by 50% and ensuring the application works on different browsers.
             </li>
             <li>
-                Monitored and analyzed Android logs using Android Studio to pinpoint issues in the Android app, reducing developers' debugging time and expediting the resolution of critical bugs.
+                <strong>Reduced debugging time for developers:</strong> Analyzed Android logs using Android Studio and utilized browser developer tools to pinpoint API and frontend issues, streamlining issue resolution.
             </li>
             <li>
-                Used browser developer tools to inspect web application behavior, identifying API calls, debugging incorrect responses, and tracing system failures to their root causes for faster defect resolution.
+                <strong>Integrated automation frameworks into CI/CD pipelines:</strong> Leveraged AWS CodePipeline and Bitbucket to enable continuous testing for frequent deployments and improved overall efficiency.
             </li>
             <li>
-                Built strong rapport with a fully remote team, fostering collaboration and a positive work environment that prioritized delivering a high-quality product.
+                <strong>Mentored a junior QA engineer:</strong> Fostered a collaborative learning environment and increased team productivity by 30% through structured training sessions, hands-on guidance on both manual and automation testing practices.
+            </li>
+        </ul>
+        <h3>Testing Domain-Specific Functionalities</h3>
+        <ul>
+            <li>
+                <strong>Healthcare Applications:</strong> Validated patient profile management workflows, including lesion location mapping and medical image scoring. Ensured accuracy and functionality in treatment scheduling, real-time treatment monitoring systems for tracking dose intake (e.g., erythemal, ppix), and dashboards providing actionable insights through graphs and progress reports for doctors.
             </li>
             <li>
-                Developed a reputation as the "Defect Detective" for proactively identifying critical issues in web and mobile applications, significantly improving product quality.
+                <strong>IoT and Sun Protection Applications:</strong> Tested AI-powered indoor/outdoor detection models, verifying sensor data accuracy (e.g., GPS, accelerometer, light sensors) across diverse environments. Validated UV dose monitoring systems for tracking UVA, UVB, HEV blue light, and Vitamin D synthesis based on dynamic factors like weather, sunscreen, clothing, and location. Verified timely notifications and alerts for sunburn risk, photodamage, and Vitamin D achievement.
             </li>
             <li>
-                Created and maintained a seamless feedback loop with developers and stakeholders to ensure continuous improvement and alignment with business objectives.
+                <strong>Performance and Compliance:</strong> Conducted load and stress testing for high-traffic web portals, optimizing system performance under peak user loads. Ensured strict adherence to GDPR regulations, including data anonymization, and successfully supported the company in passing ISO 9001 audits with zero major non-conformances.
             </li>
-            <li>
-                Validated Android, iOS and web applications against functional and non-functional requirements, covering edge cases, negative scenarios, and user experience issues.
-            </li>
-            <li>
-                Authored comprehensive defect reports that included actionable insights and detailed steps to reproduce issues, enabling faster fixes and efficient defect management.
-            </li>
-            <li>
-                Worked independently in a fully remote setup, managing responsibilities effectively and maintaining productivity while adhering to project timelines.
-            </li>
-            <li>
-                Enhanced the company’s productivity and QA culture by introducing Postman for automated API monitoring, which reduced development bottlenecks and minimized operational disruptions.
-            </li>
+        </ul>
 
 
+        <h3>Project Management and Leadership</h3>
+        <ul>
+            <li>Transitioned the team from a waterfall model to Agile Scrum, reducing delivery timelines by 25% and improving team collaboration.</li>
+            <li>Managed agile development and testing for 4+ healthcare and IoT projects, collaborating with cross-functional teams, stakeholders, clients and end users to deliver rightly developed and high quality software products</li>
+            <li>Led sprint planning, backlog prioritization, stand-ups and retrospectives to manage agile projects, streamline workflows and resolve critical blocking issues quickly and effectively.</li>
+            <li>Prepared for and successfully passed two ISO audits with zero major non-conformances, showcasing strict adherence to quality standards.</li>
+        </ul>
+    </div>
+
+    <!-- Data Scientist Role -->
+    <div class="experience-category">
+        <h2>Data Scientist</h2>
+        <p><strong>siHealth Ltd, Didcot, UK</strong> – <em>Jan 2024 to Present</em></p>
+        <p><strong>Tech Stack:</strong> LightGBM, SHAP, DASH, Python, Pandas, Numpy, Matplotlib, Seaborn, Plotly, SQLAlchemy</p>
+
+        <ul>
+            <li>Developed and enhanced an indoor-outdoor detection model using mobile sensor data, improving the F1 score from 61 to 71 through advanced feature engineering.</li>
+            <li>Designed an interactive Dash app for data visualization, allowing stakeholders to explore analytics and feature contributions using histograms, box plots, and violin plots.</li>
+            <li>Enabled real-time model-building capabilities in the Dash app, supporting hyperparameter tuning and feature selection for immediate performance feedback.</li>
+            <li>Implemented MLFlow for model deployment and reproducibility, ensuring consistent workflows from development to production.</li>
+            <li>Collaborated across teams to share insights from data visualizations, driving data-driven decision-making in product development.</li>
+        </ul>
+    </div>
+
+    <!-- Programmer Analyst Role -->
+    <div class="experience-category">
+        <h2>Programmer Analyst</h2>
+        <p><strong>Cognizant Technology Solutions, Chennai, India</strong> – <em>Mar 2013 to Mar 2015</em></p>
+        <p><strong>Tech Stack:</strong> HP ALM, SQL (OracleSQL), QC, Excel, Word, PowerPoint, WinSCP</p>
+
+        <ul>
+            <li>Conducted end-to-end testing of a health insurance web application along with validating dynamic insurance documents and ensuring data integrity.</li>
+            <li>Ensured accuracy in dynamic document generation for insurance applications, validating 100+ fields for data integrity, transformation, and compliance. Reconciled data using advanced tools like VLOOKUP, macros, and SQL queries to ensure consistent mapping across systems.</li>
+            <li>Designed and executed test plans for functional, integration, and regression scenarios, achieving high test coverage and defect resolution rates.</li>
+            <li>Collaborated with developers to resolve defects promptly, minimizing production issues and ensuring timely project deliveries.</li>
+            <li>Mentored peers in advanced Excel techniques, improving team efficiency in handling data-intensive validation tasks.</li>
+            <li>Validated CRUD operations using Oracle SQL to ensure backend data consistency and accuracy.</li>
         </ul>
     </div>
 
@@ -170,69 +100,9 @@
         <h2>Entrepreneur – Fashion Design and Tailoring</h2>
         <p><strong>India</strong> – <em>Mar 2015 to Sep 2019</em></p>
         <ul>
-            <li>
-                Designed and delivered custom outfits, meeting client demands with creativity and attention to detail while building a small-scale business.
-            </li>
-            <li>
-                Managed end-to-end processes, from client consultations to product delivery, developing strong problem-solving and project management skills.
-            </li>
-        </ul>
-    </div>
-
-    <!-- Early Career -->
-    <div class="experience-category">
-        <h2>Programmer Analyst</h2>
-        <p><strong>Cognizant Technology Solutions, Chennai, India</strong> – <em>Mar 2013 to Mar 2015</em></p>
-        <ul>
-            <li>
-                Conducted end-to-end testing of a health insurance application, ensuring the accuracy and functionality of the website features and associated documents critical for patient records.
-            </li>
-            <li>
-                Validated the accuracy of dynamically generated insurance documents by extensively using MS Excel with advanced formulas, including VLOOKUP, to cross-check data fields and streamline data validation.
-            </li>
-            <li>
-                Designed innovative testing workflows and shared efficient methods with peers, enabling the team to improve testing accuracy and reduce time spent on repetitive tasks by 20%.
-            </li>
-            <li>
-                Ensured compliance with healthcare industry standards by meticulously testing sensitive patient data and verifying data security in the system.
-            </li>
-            <li>
-                Created detailed test cases in MS Excel and executed them systematically, covering functional, integration, and regression testing scenarios to ensure comprehensive test coverage.
-            </li>
-            <li>
-                Performed defect logging and tracking using HP ALM, collaborating with developers to resolve issues and validate fixes promptly.
-            </li>
-            <li>
-                Conducted database validation using Oracle SQL, verifying CRUD operations to ensure the integrity and consistency of back-end data.
-            </li>
-            <li>
-                Tested edge cases and negative scenarios for insurance workflows, identifying critical bugs that could impact policy generation and patient records.
-            </li>
-            <li>
-                Authored test plans and test results in MS Word, documenting procedures and findings with clarity for stakeholders and project teams.
-            </li>
-            <li>
-                Mentored peers by sharing advanced Excel techniques like VLOOKUP and data comparison strategies, improving overall team productivity and accuracy.
-            </li>
-            <li>
-                Supported User Acceptance Testing (UAT) by guiding stakeholders through test scenarios and addressing concerns to ensure successful system adoption.
-            </li>
-            <li>
-                Ensured data integrity and accurate data mapping between front-end and back-end systems by designing manual data validation strategies.
-            </li>
-            <li>
-                Participated and was a main point of contact (POC) in root cause analysis of recurring defects, suggesting process enhancements to prevent similar issues in subsequent releases.
-            </li>
-            <li>
-                Delivered project milestones within tight deadlines by prioritizing high-impact testing scenarios and collaborating with cross-functional teams effectively.
-            </li>
-            <li>
-                Maintained strict adherence to organizational quality standards and best practices throughout the testing lifecycle.
-            </li>
-
-
+            <li>Designed and delivered custom outfits, meeting client demands with creativity and attention to detail while building a small-scale business.</li>
+            <li>Managed end-to-end processes, from client consultations to product delivery, developing strong problem-solving and project management skills.</li>
         </ul>
     </div>
 </section>
-
 {% endblock %}
