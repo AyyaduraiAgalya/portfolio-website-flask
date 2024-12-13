@@ -5,12 +5,12 @@ from routes import main_routes
 
 def create_app():
     """Application factory function"""
-    app = Flask(__name__)
+    application = Flask(__name__)
 
     # Register blueprints
-    app.register_blueprint(main_routes)
+    application.register_blueprint(main_routes)
 
-    return app
+    return application
 
 if __name__ == "__main__":
     app = create_app()
